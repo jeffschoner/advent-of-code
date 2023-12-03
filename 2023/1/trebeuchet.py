@@ -1,8 +1,25 @@
+WORD_DIGITS = [
+    ("one", 1),
+    ("two", 2),
+    ("three", 3),
+    ("four", 4),
+    ("five", 5),
+    ("six", 6),
+    ("seven", 7),
+    ("eight", 8),
+    ("nine", 9)
+]
+
 def find_digit(line, r):
     for i in r:
         o = ord(line[i])
-        if o >= 48 and o <= 57:
+        # "1" => 49, "9" => 57
+        if o >= 49 and o <= 57:
             return o - 48
+        else:
+            for word, digit in WORD_DIGITS:
+                if line[i:].startswith(word):
+                    return digit
     raise ValueError("No digits in {line}".format(line = line))
 
 def trebeuchet(text):

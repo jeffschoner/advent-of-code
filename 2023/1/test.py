@@ -11,9 +11,21 @@ treb7uchet
 """
         self.assertEqual(trebeuchet.trebeuchet(text), 142)
 
+    def test_example_2(self):
+        text = """
+two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen
+"""
+        self.assertEqual(trebeuchet.trebeuchet(text), 281)
+
     def test_my_value(self):
         text = """
-        3fiveone
+3fiveone
 eightnineseventwo1seven
 9h1xcrcggtwo38
 nine4pvtl
@@ -1014,7 +1026,7 @@ fourknflljrbrq63five
 42onef6seven
 39njjvzt7threetkccstz
 """
-        self.assertEqual(trebeuchet.trebeuchet(text), 54968)
+        self.assertEqual(trebeuchet.trebeuchet(text), 54094)
 
 if __name__ == "__main__":
     unittest.main()
