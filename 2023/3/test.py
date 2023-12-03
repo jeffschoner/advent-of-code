@@ -15,7 +15,9 @@ class TestCase(unittest.TestCase):
 ...$.*....
 .664.598..
 """
-        self.assertEqual(gondola.run(text), 4361)
+        symbol_sum, ratio_sum = gondola.run(text)
+        self.assertEqual(symbol_sum, 4361)
+        self.assertEqual(ratio_sum, 467835)
 
     def test_my_value(self):
         text = """
@@ -160,7 +162,9 @@ class TestCase(unittest.TestCase):
 ...*............963....*.......761..............................................*...927.........*...................*.....*........45.......
 ....981................675.........676.............156.............30...........998............697......14..366....960...874..497........278
 """
-        self.assertEqual(gondola.run(text), 540212)
+        symbol_sum, ratio_sum = gondola.run(text)
+        self.assertEqual(symbol_sum, 540212)
+        self.assertEqual(ratio_sum, 87605697)
 
 if __name__ == "__main__":
     unittest.main()
