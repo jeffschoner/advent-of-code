@@ -1,7 +1,7 @@
 from collections import defaultdict
 import re
 
-def run(text):
+def sum_of_ids_part1(text):
     lines = [line for line in text.split('\n') if line]
     result_sum = 0
 

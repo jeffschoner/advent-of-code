@@ -10,7 +10,7 @@ Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
 Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
 Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
 """
-        id_sum = cubes.run(text)
+        id_sum = cubes.sum_of_ids_part1(text)
         self.assertEqual(id_sum, 8)
 
     def test_my_values(self):
@@ -116,7 +116,7 @@ Game 98: 9 green; 8 green, 4 blue; 6 blue, 2 red, 1 green; 4 green, 1 blue; 5 bl
 Game 99: 3 red, 1 green, 5 blue; 1 red; 3 blue, 4 red; 3 blue, 1 green, 5 red
 Game 100: 3 red, 3 blue, 10 green; 3 green, 1 blue, 6 red; 5 red, 4 green, 7 blue
 """
-        id_sum = cubes.run(text)
+        id_sum = cubes.sum_of_ids_part1(text)
         self.assertEqual(id_sum, 2512)
 
 if __name__ == "__main__":
