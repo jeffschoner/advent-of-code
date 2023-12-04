@@ -13,6 +13,9 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
         id_sum = cubes.sum_of_ids_part1(text)
         self.assertEqual(id_sum, 8)
 
+        power_sum = cubes.sum_of_powers(text)
+        self.assertEqual(power_sum, 2286)
+
     def test_my_values(self):
         text = """
 Game 1: 4 blue, 7 red, 5 green; 3 blue, 4 red, 16 green; 3 red, 11 green
@@ -118,6 +121,9 @@ Game 100: 3 red, 3 blue, 10 green; 3 green, 1 blue, 6 red; 5 red, 4 green, 7 blu
 """
         id_sum = cubes.sum_of_ids_part1(text)
         self.assertEqual(id_sum, 2512)
+
+        power_sum = cubes.sum_of_powers(text)
+        self.assertEqual(power_sum, 67335)
 
 if __name__ == "__main__":
     unittest.main()
